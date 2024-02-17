@@ -2,6 +2,10 @@
 
 Verify if dynamic script reflection is possible based on bash scripturl
 
+## Introduction
+
+This terraform code create two linode stackscript resources. One references local bash file(./files/install-nginx.sh), the other references bash file download url.
+
 ## How to execute
 
 1. make "terraform.tfvars" file in root dir.
