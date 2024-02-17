@@ -1,3 +1,4 @@
+# Create a Linode instance with a StackScript bash file
 resource "linode_instance" "nginx_userdata" {
   label     = "simple_instance_userdata"
   image     = "linode/ubuntu20.04"
@@ -14,6 +15,7 @@ resource "linode_instance" "nginx_userdata" {
   stackscript_id = linode_stackscript.install_nginx.id
 }
 
+# Create a Linode instance with a StackScript URL
 resource "linode_instance" "nginx_userdata_with_url_stackscript" {
   label     = "simple_instance_userdata_url"
   image     = "linode/ubuntu20.04"
